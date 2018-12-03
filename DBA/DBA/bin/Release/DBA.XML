@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DBA</name>
+    </assembly>
+    <members>
+        <member name="T:DBA.SqlHelper">
+            <summary>
+            SqlHepler类
+            </summary>
+        </member>
+        <member name="M:DBA.SqlHelper.Query(System.String)">
+            <summary>
+            执行查询语句，返回动态类型
+            </summary>
+            <param name="sql">Sql语句</param>
+        </member>
+        <member name="M:DBA.SqlHelper.Query(System.String,System.Object)">
+            <summary>
+            执行带参数的查询语句，返回动态类型
+            </summary>
+            <param name="sql">Sql语句</param>
+            <param name="pars">参数</param>
+        </member>
+        <member name="M:DBA.SqlHelper.QueryProc(System.String)">
+            <summary>
+            执行存储过程，返回动态类型
+            </summary>
+            <param name="sql">Sql语句</param>
+        </member>
+        <member name="M:DBA.SqlHelper.QueryProc(System.String,System.Object)">
+            <summary>
+            执行带参数的存储过程，返回动态类型
+            </summary>
+            <param name="sql">Sql语句</param>
+            <param name="pars">参数</param>
+        </member>
+        <member name="M:DBA.SqlHelper.ExecuteScalar(System.String,System.Object)">
+            <summary>
+            执行sql语句，返回自增id
+            </summary>
+            <param name="sql">sql</param>
+            <param name="pars">参数</param>
+        </member>
+        <member name="M:DBA.SqlHelper.ExecuteTran(System.Collections.Generic.List{System.String},System.Object)">
+            <summary>
+            执行sql语句，带事务操作
+            </summary>
+            <param name="sqls">sqls</param>
+            <param name="pars">参数</param>
+        </member>
+    </members>
+</doc>
